@@ -1,8 +1,8 @@
 # dotEd25519
 
-A high-performance, minimal, cross-platform wrapper around BoringSSL's Ed25519 implementation, exposing only the raw primitives you need for secure key generation, signing, and verification — with no ASN.1, no certificates, no baggage.
+A high-performance, minimal, cross-platform wrapper around BoringSSL's Ed25519 implementation, exposing only the raw primitives you need for secure key generation, signing, and verification - with no ASN.1, no certificates, no baggage.
 
-The native backend is compiled directly from BoringSSL's curve25519.cc, sha512.c, and related modules — ensuring constant-time cryptographic operations and production-grade optimizations across Windows, Linux, and macOS.
+The native backend is compiled directly from BoringSSL's curve25519.cc, sha512.c, and related modules - ensuring constant-time cryptographic operations and production-grade optimizations across Windows, Linux, and macOS.
 
 Tests are included and available in the Github repo.
 
