@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>nebulae.dotEd25519</RootNamespace>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <PackageId>nebulae.dotEd25519</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Robert C. Horvath III</Authors>
+        <Company>Nebulae Foundation LLC</Company>
+        <Description>High-performance, minimal, cross-platform wrapper around BoringSSL’s Ed25519 implementation</Description>
+        <PackageTags>AVX2 neon ed25519 keys native AOT</PackageTags>
+        <RepositoryUrl>https://github.com/nebulaeonline/dotEd25519</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/nebulaeonline/dotEd25519</PackageProjectUrl>
+        <IncludeSymbols>false</IncludeSymbols>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Copyright>Copyright © 2025 Nebulae Foundation LLC </Copyright>
+        <PackageReadmeFile>docs\README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="docs">
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </None>
+        <None Include="runtimes\**\native\*" Pack="true" PackagePath="runtimes\" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>
