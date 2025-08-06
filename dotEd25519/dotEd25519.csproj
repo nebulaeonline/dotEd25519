@@ -7,7 +7,7 @@
         <RootNamespace>nebulae.dotEd25519</RootNamespace>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <PackageId>nebulae.dotEd25519</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Authors>Robert C. Horvath III</Authors>
         <Company>Nebulae Foundation LLC</Company>
         <Description>High-performance, minimal, cross-platform wrapper around BoringSSL's Ed25519 implementation</Description>
